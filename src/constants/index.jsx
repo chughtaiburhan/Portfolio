@@ -56,7 +56,7 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    name: "Voting-app",
+    name: "Admin-panel",
     description:
       "Admin panel project is built using React and incorporates various modern technologies to provide a comprehensive solution for managing application data and user interactions. With features like user management, data visualization, and responsive design, it offers a powerful tool for administrators to efficiently oversee the functionalities of their system.",
     image: projectImage6,
