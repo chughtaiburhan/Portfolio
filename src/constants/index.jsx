@@ -58,17 +58,17 @@ export const PROJECTS = [
     id: 3,
     name: "Voting-app",
     description:
-      "A voting app allows users to register, log in, and vote for parties in an election-like setting, with security features implemented via JWT tokens. The app is structured to ensure clear separation of concerns between the frontend and backend, making it easier to maintain and scale.",
+      "Admin panel project is built using React and incorporates various modern technologies to provide a comprehensive solution for managing application data and user interactions. With features like user management, data visualization, and responsive design, it offers a powerful tool for administrators to efficiently oversee the functionalities of their system.",
     image: projectImage6,
-    githubLink: "https://election-voting.vercel.app",
+    githubLink: "https://admin-panel-xi-taupe.vercel.app",
   },
   {
     id: 4,
-    name: "patient-blood-chart-app",
+    name: "Voting-app",
     description:
-      "The Patient Blood Chart App effectively addresses the critical need for managing and analyzing blood donation distribution data. By utilizing data from 2017 to 2023, the app provides valuable insights into patient blood types and trends over time.",
+      "A voting app allows users to register, log in, and vote for parties in an election-like setting, with security features implemented via JWT tokens. The app is structured to ensure clear separation of concerns between the frontend and backend, making it easier to maintain and scale.",
     image: projectImage6,
-    githubLink: "https://patient-chart-three.vercel.app",
+    githubLink: "https://election-voting.vercel.app",
   },
 ];
 

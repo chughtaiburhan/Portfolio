@@ -28,7 +28,7 @@ function Hero() {
           download
           className='inline-block px-6 py-3 mt-4 text-lg font-medium text-white bg-blue-600 rounded hover:bg-blue-700 transition duration-300'
         >
-          Download CV
+          Download CV 
         </a>
       </motion.div>
       <motion.div
