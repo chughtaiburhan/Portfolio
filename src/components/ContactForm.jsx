@@ -41,26 +41,27 @@ function ContactForm() {
         } else {
             setError({});
             setIsSending(true);
-
+    
             emailjs.send(
-                "service_mci9yof",
-                "template_22lw59s",
+                "service_hzujk2m", // Replace with the actual Service ID from your EmailJS dashboard
+                "template_lirqudj",   // Replace with the correct Template ID
                 formData,
-                "mkCv8D6SRQT_ptUE5"
+                "Qci6xkOPTxIJ8q7Oh"   // Ensure this is your actual public key
             )
-                .then((response) => {
-                    toast.success("Message sent successfully");
-                    setFormData({ name: "", email: "", message: "" });
-                })
-                .catch((error) => {
-                    console.log("FAILED...", error);
-                    toast.error("Failed to send message. Please try again later.");
-                })
-                .finally(() => {
-                    setIsSending(false);
-                });
+            .then((response) => {
+                toast.success("Message sent successfully");
+                setFormData({ name: "", email: "", message: "" });
+            })
+            .catch((error) => {
+                console.log("FAILED...", error);
+                toast.error("Failed to send message. Please try again later.");
+            })
+            .finally(() => {
+                setIsSending(false);
+            });
         }
     };
+    
 
     return (
         <div className='p-4 lg:w-3/4' id='contact'>
@@ -78,7 +79,8 @@ function ContactForm() {
                             value={formData.name}
                             placeholder='name'
                             onChange={handleChange}
-                            className='mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none'
+                            className='mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2
+                             text-sm focus:border-stone-400 focus:outline-none'
                         />
                         {error.name && ( // Use `error` instead of `errors`
                             <p className='text-sm text-rose-800'>{error.name}</p>
@@ -92,7 +94,8 @@ function ContactForm() {
                             value={formData.email}
                             placeholder='email'
                             onChange={handleChange}
-                            className='mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none'
+                            className='mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2
+                             text-sm focus:border-stone-400 focus:outline-none'
                         />
                         {error.email && ( // Use `error` instead of `errors`
                             <p className='text-sm text-rose-800'>{error.email}</p>
@@ -108,14 +111,16 @@ function ContactForm() {
                         value={formData.message} // Corrected value attribute
                         placeholder='message' // Corrected placeholder
                         onChange={handleChange}
-                        className='mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none'
+                        className='mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 
+                        text-sm focus:border-stone-400 focus:outline-none'
                         rows="6"
                     />
                     {error.message && ( // Use `error` instead of `errors`
                         <p className='text-sm text-rose-800'>{error.message}</p>
                     )}
                 </div>
-                <button type="submit" className={`mb-8 w-full rounded border border-stone-50/30 bg-stone-200 px-4 py-2 text-sm font-semibold text-stone-900 hover:bg-stone-300 ${isSending ? "cursor-not-allowed opacity-50" : ""}`}
+                <button type="submit" className={`mb-8 w-full rounded border border-stone-50/30 bg-stone-200 px-4 py-2 
+                text-sm font-semibold text-stone-900 hover:bg-stone-300 ${isSending ? "cursor-not-allowed opacity-50" : ""}`}
                     disabled={isSending}
                 >
                     <div className='flex items-center justify-center gap-2'>
