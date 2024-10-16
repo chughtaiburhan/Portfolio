@@ -24,7 +24,7 @@ function Hero() {
 
         {/* Download CV Button */}
         <a
-          href='/pdf/Frontend-react-Developer.pdf ' // Link to your CV file
+          href='/pdf/Frontend-React.pdf ' // Link to your CV file
           download
           className='inline-block px-6 py-3 mt-4 text-lg font-medium text-white bg-blue-600 rounded hover:bg-blue-700 transition duration-300'
         >
