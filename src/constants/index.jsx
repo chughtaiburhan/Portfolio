@@ -61,14 +61,7 @@ export const PROJECTS = [
     image: projectImage6,
     githubLink: "https://admin-panel-xi-taupe.vercel.app",
   },
-  {
-    id: 4,
-    name: "Voting-app",
-    description:
-      "A voting app allows users to register, log in, and vote for parties in an election-like setting, with security features implemented via JWT tokens. The app is structured to ensure clear separation of concerns between the frontend and backend, making it easier to maintain and scale.",
-    image: projectImage6,
-    githubLink: "https://election-voting.vercel.app",
-  },
+  
 ];
 
 export const BIO = [
