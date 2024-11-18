@@ -50,7 +50,7 @@ export const PROJECTS = [
     name: "Chat-bot Application",
     description:
       "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
-    image: projectImage6,
+    image: projectImage3,
     githubLink: "https://chat-bot-iota-wine.vercel.app",
   },
   {
@@ -58,9 +58,17 @@ export const PROJECTS = [
     name: "Admin-panel",
     description:
       "Admin panel project is built using React and incorporates various modern technologies to provide a comprehensive solution for managing application data and user interactions. With features like user management, data visualization, and responsive design, it offers a powerful tool for administrators to efficiently oversee the functionalities of their system.",
-    image: projectImage6,
+    image: projectImage4,
     githubLink: "https://admin-panel-xi-taupe.vercel.app",
   },
+  {
+    id:4,
+    name:"Foody website",
+    description:
+    "Developed a fully responsive and high-performance food delivery website, optimized for both desktop and mobile devices. The website is highly scalable, providing seamless user experience with fast loading times and smooth navigation across all platforms.",
+    image:projectImage5,
+    githubLink:"food-delivery-one-nu.vercel.app",
+  }
   
 ];
 
